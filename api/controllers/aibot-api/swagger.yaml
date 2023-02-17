@@ -1,0 +1,16 @@
+paths:
+  /aibot-talk:
+    post:
+      x-swagger-router-controller: routing
+      operationId: tsundere
+      parameters:
+        - in: body
+          name: body
+          schema:
+            $ref: "#/definitions/CommonRequest"
+      responses:
+        200:
+          description: Success
+          schema:
+            $ref: "#/definitions/CommonResponse"
+
